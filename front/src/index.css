@@ -1,0 +1,31 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.addproduct{
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 400px;
+  margin: 400px;
+  padding: 30px;
+ }
+.addproduct form{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.addproduct form input{
+  padding: 10px;
+
+}
+.addproduct form button{
+  padding: 8px 20px;
+}
+html {
+  height: 500px;
+  width: 300px;
+  border: 2px solid;
+}  */
