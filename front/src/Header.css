@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Headerclass {
+    background-color: darkcyan;
+    font-size: 18px;
+    padding: 15px;
+}
+     .Headerclass a {
+        text-decoration: none;
+        margin: 12px;
+        color: black;
+    }
