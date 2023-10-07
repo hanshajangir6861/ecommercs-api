@@ -9,6 +9,6 @@ company:String,
 
 
 })
-const AdminModals= mongoose.model("admin",AdminSchema)
+const AdminModals= mongoose.model("admins",AdminSchema)
 
 export  default AdminModals

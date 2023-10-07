@@ -1,6 +1,6 @@
 import express from "express"
 import UserModals from "./UserModal.js"
-
+// import bcrypt from "bcrypt"
 
 const userrouter = express.Router()
 
@@ -26,5 +26,30 @@ else{
 }
 
 })
+
+const saltRound = 10;
+
+bcrypt.hash("password",saltRound,(err,hash)=>{
+    if (err) {
+        console.error(err);
+    }
+    else{
+          console.log('hashed:password', hash)
+    }
+
+});
+// const HashedStorePassword=''
+
+// bcrypt.compare('loginpassword',HashedStorePassword.(err,hash)=>{
+//     if(err){
+//         console.log('Password Matched');
+//     }
+// else {
+// console.log('password mismatch')
+
+// }
+
+// })
+
 
 export default userrouter
