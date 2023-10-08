@@ -27,17 +27,17 @@ else{
 
 })
 
-const saltRound = 10;
+// const saltRound = 10;
 
-bcrypt.hash("password",saltRound,(err,hash)=>{
-    if (err) {
-        console.error(err);
-    }
-    else{
-          console.log('hashed:password', hash)
-    }
+// bcrypt.hash("password",saltRound,(err,hash)=>{
+//     if (err) {
+//         console.error(err);
+//     }
+//     else{
+//           console.log('hashed:password', hash)
+//     }
 
-});
+// });
 // const HashedStorePassword=''
 
 // bcrypt.compare('loginpassword',HashedStorePassword.(err,hash)=>{
