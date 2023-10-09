@@ -12,6 +12,8 @@ import {BrowserRouter , Route , Routes} from 'react-router-dom'
 import Allproducts from './AllProducts'
 import AddProduct from './AddProduct.jsx'
 
+// import './'
+
 ReactDOM.createRoot(document.getElementById('root')).render(
 <BrowserRouter>
 <Header/>

@@ -1,0 +1,55 @@
+.user{
+    height: 345px;
+    width: 270px;
+    border: 2px solid;
+    margin: auto;
+    padding: 20px;
+    margin-top: 40px;
+}
+.user form input {
+    height: 30px;
+    width: 220px;
+    margin: 10px;
+}
+button {
+    padding: 9px 20px 9px 20px;
+    margin: 5px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+.admin{
+    height: 345px;
+    width: 270px;
+    border: 2px solid;
+    margin: auto;
+    padding: 20px;
+    margin-top: 40px;
+}
+.admin form input {
+    height: 30px;
+    width: 220px;
+    margin: 10px;
+}
+.userlogin{
+    height: 345px;
+    width: 270px;
+    border: 2px solid;
+    margin: auto;
+    padding: 20px;
+    margin-top: 40px;
+}
+.userSignup{
+    height: 345px;
+    width: 270px;
+    border: 2px solid;
+    margin: auto;
+    padding: 20px;
+    margin-top: 40px;
+}
+.userSignup form input{
+    height: 30px;
+    width: 220px;
+    margin: 10px;
+}

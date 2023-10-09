@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import productrouter from "./productrouter.js";
 import userrouter from "./DB/UserRouter.js";
 
+import './index.css'
 import Adminrouter from "./DB/AdminRouter.js";
 
 const app = express()
