@@ -4,8 +4,7 @@ import mongoose from "mongoose";
 import productrouter from "./productrouter.js";
 import userrouter from "./DB/UserRouter.js";
 
-import './index.css'
-import Adminrouter from "./DB/AdminRouter.js";
+import AdminRouter from "./DB/AdminRouter.js";
 
 const app = express()
 const connection = mongoose.connect("mongodb://127.0.0.1:27017/ecommerce")
@@ -19,7 +18,7 @@ app.use(cors())
 
 app.use("/product", productrouter)
 app.use("/user", userrouter)
-app.use("/admin",Adminrouter)
+app.use("/admin",AdminRouter)
 
 
 connection.then(() => {

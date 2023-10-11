@@ -15,7 +15,7 @@ function Allproducts() {
     },[])
 
     const showProduct = async()=>{
-        let result = await axios.get("http://localhost:8000/product/")
+        let result = await axios.get("http://localhost:8080/product/")
         setAllproduct(result.data)
         console.log(result);
     }
@@ -39,7 +39,9 @@ if (result.data) {
         return(
             <div className="products" key={index}>
                 <div className="img">
+                    <img src={`http://localhost:8080/uploads/${product.image}`} alt="" />
                     <img src={`http://localhost:8000/uploads/${product.image.filename}`} alt="" />
+
                 </div>
                 <div className="item">
                     <h2>Product: {product.name}</h2>

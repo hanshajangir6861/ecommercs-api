@@ -6,7 +6,7 @@ name:String,
 price:String,
 category:String,
 company:String,
-// image:File
+image:Object
 
 })
 const ProductModals= mongoose.model("product",productSchema)

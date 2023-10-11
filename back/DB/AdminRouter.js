@@ -1,17 +1,18 @@
 import express from "express"
 import AdminModals from "./AdminModal.js"
 
-const Adminrouter = express.Router()
+const AdminRouter = express.Router()
 
-Adminrouter.post("/register", async (req, res) => {
+AdminRouter.post("/register", async (req, res) => {
     let Admintoregister = new AdminModals(req.body)
     let result = await Admintoregister.save()
     res.json(result)
 })
 
-Adminrouter.post("/login", async (req, res) => {
+AdminRouter.post("/login", async (req, res) => {
+    // let{name, email,username, password} = req.body
     if (req.body.username && req.body.password) {
-        let Admintologin = await AdminModals.findOne({username:req.body.username,password:req.body.password}).select("-password")
+        let Admintologin = await AdminModals.findOne(req.body).select("-password")
         console.log(Admintologin);
         if (Admintologin) {
             res.send(Admintologin)
@@ -26,4 +27,4 @@ Adminrouter.post("/login", async (req, res) => {
 
 })
 
-export default Adminrouter
+export default AdminRouter
