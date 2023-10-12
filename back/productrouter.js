@@ -20,15 +20,17 @@ const storage = multer.diskStorage({
   productrouter.post("/add",upload.single("image"), async (req, res) => {
       const { name, price, category, company } = req.body;
       const image = req.file;
+      // console.log(image);
     const productToAdd  = new ProductModals({name, price, category, company,image})
       let result = await productToAdd.save()
+      // console.log(productToAdd);
       res.json(result)
   
     }
   );
   
   productrouter.get("/", async(req , res)=>{
-let result = await productrouter.find()
+let result = await ProductModals.find()
 res.json(result)
 })
 
@@ -69,23 +71,3 @@ export default productrouter
 
 
 
-// import express  from "express";
-// import ProductModals from "./DB/ProductModal.js";
-
-
-// const productrouter= express.Router()
-
-// productrouter.get("/", async(req,res)=>{
-// const existingProduct = await ProductModals.find()
-// console.log(existingProduct)
-//     res.json(existingProduct)
-
-// })
-
-// productrouter.post("/add",async(req,res)=>{
-// const productToRegister = new ProductModals(req.body)
-// let result = await productToRegister.save()
-// console.log(result)
-// res.json(result)
-// })
-// export default productrouter

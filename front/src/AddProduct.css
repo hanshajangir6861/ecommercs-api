@@ -1,27 +1,39 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .addproduct{
-    border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 400px;
-    margin: 400px;
-    padding: 30px;
-   }
-  .addproduct form{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  .addproduct form input{
-    padding: 10px;
-  
-  }
-  .addproduct form button{
-    padding: 8px 20px;
-  }
- 
+.addProduct {
+  height: 405px;
+  width: 300px;
+  border: 2px solid;
+  margin: auto;
+  padding: 16px;
+  /* border-right: 1px; */
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 40px;
+  box-shadow: 4px 4px 4px 4px lightseagreen;
+}
+.addproduct form input{
+  height: 30px;
+  width: 245px;
+  margin: 10px;
+}
+/* form{
+  padding: 7px;
+  margin: 13px;
+  width: 191px;
+} */
+
+
+ .addProduct input{
+    padding: 7px;
+    margin: 13px;
+    width: 191px;
+}
+
+ .addProduct button {
+    padding: 9px 20px 9px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 12px;
+
+}

@@ -1,0 +1,7 @@
+.home{
+    background-image: url(https://cdn.shopify.com/s/files/1/0070/7032/files/introducing-shop.jpg?v=1587655641&width=1024);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

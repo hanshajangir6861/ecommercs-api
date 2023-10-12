@@ -8,11 +8,11 @@ import Header from './Header.jsx'
 import AdminLogin from './AdminLogin.jsx'
 import UserLogin from './UserLogin.jsx'
 import {BrowserRouter , Route , Routes} from 'react-router-dom'
-// import UserSignup from './UserSignUp.jsx'
 import Allproducts from './AllProducts'
 import AddProduct from './AddProduct.jsx'
+import EditProduct from './EditProduct.jsx'
 
-// import './'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 <BrowserRouter>
@@ -23,7 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Route path="/AdminLogin" element={<AdminLogin/>}></Route>
     <Route path="/AddProduct" element={<AddProduct/>}></Route>
     <Route path="/Allproducts" element={<Allproducts/>}></Route>
-
+    <Route path='/edit/:id' element={<EditProduct/>}></Route>
 
     </Routes>
 

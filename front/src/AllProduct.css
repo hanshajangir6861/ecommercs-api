@@ -4,16 +4,15 @@ img {
 }
 .products {
     height: 400px;
-    width: 220px;
+    width: 252px;
     border: 2px solid;
-    padding: 25px;
-    /* display: flex; */
-    /* align-items: center; */
+    padding: 27px;
+   
     text-align: center;
-    margin: 10px;
+    margin: 13px;
 }
 h2 {
-    font-size: 20px;
+    font-size: 18px;
 }
 .pro{
     display: flex;
@@ -21,3 +20,19 @@ h2 {
     align-items: center;
     flex-wrap: wrap;
 }
+.btn button {
+    padding: 9px 20px 9px 20px;
+    margin: 5px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+}
+/* .products{
+    background-image: linear-gradient(rgb(65, 147, 118),rgb(65, 147, 118),rgb(65, 147, 118));
+    height: 100vh;
+    width: 100%; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+/* } */

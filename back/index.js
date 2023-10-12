@@ -15,6 +15,7 @@ const port = 8080
 // app.use(express.urlencoded)
 app.use(express.json())
 app.use(cors())
+app.use('/uploads',express.static('uploads'))
 
 app.use("/product", productrouter)
 app.use("/user", userrouter)
