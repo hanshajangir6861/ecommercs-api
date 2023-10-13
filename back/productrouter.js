@@ -1,5 +1,5 @@
 import express from "express";
-import ProductModals from "./DB/ProductModal.js";
+import ProductModals from "./ProductModal.js";
 import multer from "multer";
 import path from "path";
 

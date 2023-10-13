@@ -2,9 +2,9 @@ import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import productrouter from "./productrouter.js";
-import userrouter from "./DB/UserRouter.js";
+import userrouter from "./UserRouter.js";
 
-import AdminRouter from "./DB/AdminRouter.js";
+import AdminRouter from "./AdminRouter.js";
 
 const app = express()
 const connection = mongoose.connect("mongodb://127.0.0.1:27017/ecommerce")

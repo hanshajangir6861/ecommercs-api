@@ -3,12 +3,32 @@ import axios from 'axios'
 import { useEffect } from 'react'
 import './Allproduct.css'
 import { useNavigate } from 'react-router-dom'
+export const ecomContext = createContext();
+
 
 
 
 function Allproducts() {
+
+    const [allCategory , setAllCategory] = use()
+const [isfilter,setIsfilter] =(false)
     const [allproduct, setAllproduct] = useState([])
     const navigate = useNavigate()
+
+function filterCategory(e,name){
+
+
+
+
+}
+
+
+
+    useEffect(()=> {
+allCategory.name
+
+    }, [Isfilter])
+
 
     useEffect(() => {
         showProduct()
@@ -33,8 +53,17 @@ function Allproducts() {
     }
     return (
         <div className='allProduct'>
-            <h1>All Products</h1>
+<ul>
+<li><a href="#">Grocary</a> </li>
+<li> <a href="#">Electronics</a></li>
+<li> <a href="#">Men's Clothings</a></li>
+<li> <a href="#">Women's Clothing</a></li>
+<li><a href="#">Bodybuilding</a></li>
+</ul>
+
             <div className="pro">
+
+
                 {allproduct.map((product, index) => {
                     return (
                         <div className="products" key={index}>
